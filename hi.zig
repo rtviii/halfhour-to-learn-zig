@@ -1,3 +1,14 @@
 const std = @import("std");
-// comments look like this and go to the end of the line
-pub fn main() void {}
+
+pub fn main() void {
+    var x: i32 = 47;
+    var y: i32 = 47;
+    var z = x + y; // declares z and sets it to 94.
+    std.debug.print("z: {}\n", .{z});
+    foo();
+}
+
+
+fn foo() void{
+    std.debug.print("hihi\n",.{});
+}
